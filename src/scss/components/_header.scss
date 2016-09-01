@@ -1,0 +1,48 @@
+.header{
+  height: 100vh;
+  background: $header-gradient;
+  background-image: url("/images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+
+  .header__nav{
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10%;
+    text-decoration: none !important;}
+
+    li{
+      display: inline-block;
+      float: right;
+      padding-right: 10px;
+
+      a {
+      color: white;
+      text-decoration: none;
+      }
+    }
+
+    li:first-child{
+      float: left;
+    }
+
+  .header__body{
+    text-align: center;
+    h1{
+      font-size: 110px;
+    }
+  }
+}
+
+// remove dots form  lists => list-style-type:none
