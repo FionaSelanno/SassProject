@@ -1,8 +1,15 @@
 var gulp = require('gulp');
+var clean = require("gulp-clean");
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var runSequence = require('run-sequence');
 var del = require('del');
+
+// Delete the dist directory
+gulp.task('clean', function() {
+ return gulp.src('dist')
+ .pipe(clean());
+});
 
 gulp.task('scss', function() {
 	return gulp.src(['src/scss/**/*.scss', 'src/scss/*.scss'])
