@@ -1,3 +1,4 @@
+// import gulp node-package
 var gulp = require('gulp');
 var clean = require("gulp-clean");
 var sass = require('gulp-sass');
@@ -42,6 +43,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('default', function() {
 	return runSequence(
+		'clean',
 		'browser-sync',
 		'copyFiles',
 		'scss',
