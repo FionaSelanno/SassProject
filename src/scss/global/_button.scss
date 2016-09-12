@@ -1,0 +1,10 @@
+.btn{
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  &.btn--header{
+    color: white;
+  }
+}

@@ -88,6 +88,15 @@ body {
   padding: 0;
   font-family: "Raleway", sans-serif; }
 
+.btn {
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3rem; }
+  .btn.btn--header {
+    color: white; }
+
 .header {
   height: 100vh;
   background: linear-gradient(90deg, #6C59B4, #2B8BE3);
@@ -122,4 +131,8 @@ body {
   .header .header__body {
     text-align: center; }
     .header .header__body h1 {
-      font-size: 110px; }
+      font-size: 80px;
+      margin-bottom: 20px; }
+
+.header__subheading {
+  margin-bottom: 70px; }
