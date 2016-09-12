@@ -1,0 +1,19 @@
+.intro{
+  height: 450px;
+  background-color: $background-grey;
+  background-size: cover;
+  padding-top: 80px;
+  text-align: center;
+  color: $primary-font-color;
+  overflow: hidden;
+}
+
+.intro__heading{
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.intro__subheading{
+  margin-bottom: 50px;
+}
