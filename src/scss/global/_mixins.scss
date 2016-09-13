@@ -1,0 +1,18 @@
+// grid mixin
+@mixin row() {
+  font-size: 0;
+}
+
+@mixin col($col, $sum, $gap: 2rem, $align: top) {
+  width: percentage($col/$sum);
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: $align;
+  padding: 0 $gap;
+}
+
+// normal tekst
+@mixin p{
+  line-height: 2;
+  font-size: 14px;
+}

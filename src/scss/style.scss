@@ -1,12 +1,14 @@
 // fonts
-@import 'https://fonts.googleapis.com/css?family=Raleway:100,400,800';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,800';
 
 // global
 @import 'global/reset';
 @import 'global/variables';
 @import 'global/layout';
 @import 'global/button';
+@import 'global/mixins';
 
 // components
 @import 'components/header';
 @import 'components/intro';
+@import 'components/features';
