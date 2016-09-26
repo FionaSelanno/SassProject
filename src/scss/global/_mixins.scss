@@ -1,6 +1,7 @@
 // grid mixin
 @mixin row() {
   font-size: 0;
+  font-style: 200;
 }
 
 @mixin col($col, $sum, $gap: 2rem, $align: top) {
