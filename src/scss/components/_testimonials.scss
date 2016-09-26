@@ -1,0 +1,26 @@
+.testimonials{
+  height: 500px;
+  background: $header-gradient;
+  color: $primary-font-color;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.testimonial{
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.testimonial__quote{
+  font-weight: 100;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.testimonial__authors{
+  li{
+    display: inline-block;
+    margin: 0px 5px;
+  }
+}
