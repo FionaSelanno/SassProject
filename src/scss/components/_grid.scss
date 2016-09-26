@@ -1,0 +1,49 @@
+.twittergrid{
+  @include row;
+  height: 800px;
+  background-repeat: no-repeat;
+  // padding: 0px 120px;
+  align: center;
+
+}
+
+.twittergrid__element{
+  display: inline-block;
+  height: 33%;
+  width: 33%;
+  @include col (1,3,0rem);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  &:first-child{
+    background-image: url("/images/grid-bg-1.png");
+  }
+
+  &:nth-child(2n){
+    background-image: url("/images/grid-bg-2.png");
+  }
+
+  &:nth-child(3n){
+    background-color: $dark-purple;
+  }
+
+  &:nth-child(4n){
+    background-image: url("/images/grid-bg-4.png");
+  }
+
+  &:nth-child(5n){
+    background-color: $dark-purple;
+  }
+
+  &:nth-child(6n){
+    background-image: url("/images/grid-bg-6.png");
+  }
+
+  &:nth-child(7n){
+    background-color: $dark-purple;
+  }
+
+  &:nth-child(8n){
+    background-image: url("/images/grid-bg-8.png");
+  }
+}

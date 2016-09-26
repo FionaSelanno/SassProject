@@ -1,5 +1,5 @@
 .mission{
-  height: 600px;
+  height: 400px;
   text-align: center;
   padding: 0 100px;
 
@@ -17,7 +17,7 @@
 }
 
 .mission__paragraph{
-  @include col(1,2);
+  @include col(1,2,2rem);
   @include p;
   text-align: left;
 }
