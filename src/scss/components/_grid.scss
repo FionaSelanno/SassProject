@@ -1,49 +1,67 @@
 .twittergrid{
   @include row;
-  height: 800px;
+  height: 600px;
   background-repeat: no-repeat;
-  // padding: 0px 120px;
+  padding: 0px 120px;
   align: center;
-
 }
 
 .twittergrid__element{
   display: inline-block;
-  height: 33%;
-  width: 33%;
-  @include col (1,3,0rem);
-  background-size: 100%;
+  width: 50%;
+  height: 300px;
+  @include col (1,2,0rem);
+  background-size: 150%;
   background-repeat: no-repeat;
 
   &:first-child{
-    background-image: url("/images/grid-bg-1.png");
+    background-image: url("/images/pic1-grid.jpeg");
+    background-color: $dark-grey;
+    opacity: .6;
+    transition-duration: 0.5s;
+    &:hover{
+      background-size: 100%;
+      opacity: 1;
+    }
   }
 
   &:nth-child(2n){
-    background-image: url("/images/grid-bg-2.png");
-  }
-
-  &:nth-child(3n){
-    background-color: $dark-purple;
+    background-color: $dark-grey;
+    position: relative;
+    .center-block{
+      margin: 80px;
+    }
   }
 
   &:nth-child(4n){
-    background-image: url("/images/grid-bg-4.png");
+    background-image: url("/images/pic2-grid.jpeg");
+    @extend :first-child;
+    &:hover{
+      background-size: 110%;
+      opacity: 1;
+    }
+  }
+  &:nth-child(3n){
+    @extend :nth-child(2n)
   }
 
-  &:nth-child(5n){
-    background-color: $dark-purple;
+  .grid-label{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 15px 0px 20px;
+    font-size: 14px;
+    line-height: 2;
   }
 
-  &:nth-child(6n){
-    background-image: url("/images/grid-bg-6.png");
-  }
-
-  &:nth-child(7n){
-    background-color: $dark-purple;
-  }
-
-  &:nth-child(8n){
-    background-image: url("/images/grid-bg-8.png");
+  .label{
+    color: $mid-grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    padding-right: 20px;
   }
 }

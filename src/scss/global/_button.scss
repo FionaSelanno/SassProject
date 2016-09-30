@@ -13,4 +13,12 @@
       border-color: rgba(255, 255, 255, 0.5);
     }
   }
+
+  &.btn--grid{
+    color: white;
+    background-color: $secondary-color;
+    padding: 0.2rem 0.5rem;
+    font-weight: 600;
+    font-size: 12px;
+  }
 }
