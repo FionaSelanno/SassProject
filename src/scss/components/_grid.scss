@@ -1,0 +1,67 @@
+.twittergrid{
+  @include row;
+  height: 600px;
+  background-repeat: no-repeat;
+  padding: 0px 120px;
+  align: center;
+}
+
+.twittergrid__element{
+  display: inline-block;
+  width: 50%;
+  height: 300px;
+  @include col (1,2,0rem);
+  background-size: 150%;
+  background-repeat: no-repeat;
+
+  &:first-child{
+    background-image: url("/images/pic1-grid.jpeg");
+    background-color: $dark-grey;
+    opacity: .6;
+    transition-duration: 0.5s;
+    &:hover{
+      background-size: 100%;
+      opacity: 1;
+    }
+  }
+
+  &:nth-child(2n){
+    background-color: $dark-grey;
+    position: relative;
+    .center-block{
+      margin: 80px;
+    }
+  }
+
+  &:nth-child(4n){
+    background-image: url("/images/pic2-grid.jpeg");
+    @extend :first-child;
+    &:hover{
+      background-size: 110%;
+      opacity: 1;
+    }
+  }
+  &:nth-child(3n){
+    @extend :nth-child(2n)
+  }
+
+  .grid-label{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 15px 0px 20px;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .label{
+    color: $mid-grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    padding-right: 20px;
+  }
+}

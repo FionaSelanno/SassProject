@@ -4,12 +4,13 @@
   font-style: 200;
 }
 
-@mixin col($col, $sum, $gap: 2rem, $align: top) {
+@mixin col($col, $sum, $gap, $align: top) {
   width: percentage($col/$sum);
   font-size: 16px;
   display: inline-block;
   vertical-align: $align;
   padding: 0 $gap;
+  box-sizing: border-box;
 }
 
 // normal tekst
