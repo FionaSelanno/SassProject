@@ -1,0 +1,27 @@
+.footer{
+  color: white;
+  background-color: $dark-grey;
+  padding: 50px 150px;
+  height: 120px;
+
+  // display: flex;
+  // flex-direction: row;
+  li{
+    display: inline-block;
+    float: right;
+    font-size: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    img{
+      float: left;
+      padding-right: 10px;
+    }
+  }
+
+  li:first-child{
+    float: left;
+    h4{
+      font-weight: lighter;
+    }
+  }
+}
