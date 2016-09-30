@@ -21,4 +21,14 @@
     font-weight: 600;
     font-size: 12px;
   }
+
+  &.btn--signup{
+    color: white;
+    font-weight: 400px;
+    font-size: 8px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+  }
 }

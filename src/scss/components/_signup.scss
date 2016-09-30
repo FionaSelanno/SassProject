@@ -1,0 +1,23 @@
+.signup{
+  height: 200px;
+  text-align: center;
+  background-color: $light-grey;
+  margin-top: 100px;
+
+  .signup-content{
+    padding: 60px;
+  }
+
+  .signup__heading{
+    padding-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .signup__textinput{
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+    padding: 0.5rem 2rem;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
