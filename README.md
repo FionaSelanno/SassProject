@@ -1,6 +1,6 @@
 #Introduction:
 The goal of this app is to master sass by recreating [this](http://tympanus.net/Freebies/Landio/) website. I used Gulp to compile the scss. 
-The initial setup is created by [Tjin Au Yeung](https://github.com/tjinauyeung/sass_lesson). It is a WORK IN PROGRESS!
+The initial setup is created by [Tjin Au Yeung](https://github.com/tjinauyeung/sass_lesson). It is a WORK IN PROGRESS! There are some [topics](https://github.com/FionaSelanno/SassProject/issues) I have to work on.
 
 #Installation:
     clone the repository
