@@ -4,7 +4,9 @@
 
 	<title>Landing.io</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<script src="js/jquery.js"></script>
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -26,12 +28,17 @@
 		</header>
 
 		<section class="intro">
-			<h2 class="intro__heading">Build your beautiful UI, the way you want it, with Land.io</h2>
-			<p class="intro__subheading">Craft memorable, emotive experiences with our range of beautiful UI elements.</p>
-			<img src="/images/intro-ipad.png" style="width:1000px">
+			<div class="animation-element">
+				<h2 class="intro__heading">Build your beautiful UI, the way you want it, with Land.io</h2>
+			</div>
+				<p class="intro__subheading">Craft memorable, emotive experiences with our range of beautiful UI elements.</p>
+				<img src="/images/intro-ipad.png" style="width:1000px">
+
+				<!-- <img style="display: none;" src="images/intro-ipad.png" alt="iPad mock" id="ipad"> -->
 		</section>
 
 		<section class="features">
+
 			<div class="feature__column">
 				<img class="feature__icon" src="images/icon-pen.png">
 				<article>
@@ -61,6 +68,7 @@
 					<p class="feature__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi exercitationem placeat quis illo, magni consequuntur ducimus quam voluptatibus.</p>
 				</article>
 			</div>
+
 		</section>
 
 		<section class="testimonials">
