@@ -1,25 +1,26 @@
-var OnScreen = require('onscreen');
-var os = new OnScreen({
-    tolerance: 0,
-    throttle: 0,
-    toggleClass: ''
-});
-os.on('enter', '.material-slide-up', (element) => {
-    $(element).addClass('slideInUp animated')
-});
+$(document).ready(function(){
+  var $animationElement= $('.animation-element');
+  var $window = $(window);
 
-os.on('enter', '.material-bounce-in ', (element) => {
-    $(element).addClass('bounceIn animated')
-});
+  function check_if_in_view() {
+    var window_height = $window.height();
+    var window_top_position = $window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
 
-os.on('enter', '.material-fade-in ', (element) => {
-    $(element).addClass('fadeIn animated')
-});
+    $.each($animationElement, function(){
+      var $element = $(this);
+      var element_height = $element.outerHeight();
+      var element_top_position = $element.offset().top;
+      var element_bottom_position = (element_top_position + element_height);
 
-os.on('enter', '.material-zoomIn', (element) => {
-    $(element).addClass('zoomIn animated')
-});
-
-os.on('enter', '.material-rollin', (element) => {
-    $(element).addClass('rollIn animated')
+      if ((element_bottom_position >= window_top_position) &&
+          (element_top_position <= window_bottom_position)){
+            $element.addClass('animation');
+          } else {
+            $element.removeClass('animation');
+          }
+    });
+  };
+  $window.on('scroll resize', check_if_in_view); //event handler that listens to the scroll and resize events.
+  $window.trigger('scroll'); //trigger the scroll event as soon the DOM is ready
 });
